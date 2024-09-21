@@ -251,6 +251,7 @@ header {
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
 }
 
 .about-content {
@@ -269,12 +270,14 @@ header {
     font-size: 2rem;
     margin-bottom: 15px;
     color: #e63946;
+    transition: color 0.3s ease;
 }
 
 .about-text p {
     font-size: 1.1rem;
     line-height: 1.8;
     color: #333;
+    text-align: justify; /* Membuat teks rata kiri dan kanan */
 }
 
 .about-img-wrapper {
@@ -292,6 +295,10 @@ header {
 
 .about-img:hover {
     transform: scale(1.05);
+}
+
+.about-text h2:hover {
+    color: #d62828;
 }
 
 /* Responsive Design */
@@ -341,6 +348,7 @@ header {
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: justify; /* Membuat teks di dalam elemen ini rata kiri dan kanan */
 }
 
 .vision:hover, .mission:hover {
@@ -368,6 +376,7 @@ header {
     font-size: 1.1rem;
     line-height: 1.8;
     color: #555;
+    text-align: justify; /* Membuat teks di dalam daftar rata kiri dan kanan */
 }
 
 .mission-list li {
@@ -389,7 +398,6 @@ header {
         gap: 20px;
     }
 }
-
 
 /* Vision & Mission Section Styles */
 .section {
@@ -413,7 +421,7 @@ header {
 
 .vision {
     flex: 1;
-    text-align: left;
+    text-align: justify; /* Membuat teks rata kiri dan kanan */
 }
 
 .tagline {
@@ -466,7 +474,7 @@ header {
 
 .mission {
     flex: 1;
-    text-align: left;
+    text-align: justify; /* Membuat teks rata kiri dan kanan */
 }
 
 .mission h3 {
@@ -478,6 +486,7 @@ header {
 .mission-list {
     list-style: none;
     padding: 0;
+    text-align: justify; /* Membuat teks di dalam daftar rata kiri dan kanan */
 }
 
 .mission-list li {
@@ -499,6 +508,7 @@ header {
         margin-top: 20px;
     }
 }
+
 
 /* Testimonials Section Styles */
 .testimonials {
